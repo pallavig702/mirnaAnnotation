@@ -694,7 +694,7 @@ def annotateMirDeepCandidates(similarityDict, organism, mirBaseDict,
                                 libCount += 1
                         if(libCount > 1 and libCount > float(numLibs * .1)):
                             similarFlag = True
-                            line.append("Conserved family of the following:")
+                            line.append("Conserved_family_of_the_following:")
                             line.append(mirFamily)
 
                             toWrite = ""
@@ -706,7 +706,7 @@ def annotateMirDeepCandidates(similarityDict, organism, mirBaseDict,
                                         organismList[-1])):
                                     toWrite += "%s" % similarOrganism
                                 else:
-                                    toWrite += "%s " % similarOrganism
+                                    toWrite += "%s/" % similarOrganism
 
                             line.append(toWrite)
 
